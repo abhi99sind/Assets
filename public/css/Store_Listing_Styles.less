@@ -1,0 +1,154 @@
+@Grey_Color: grey;
+@Normal_Text_Size: 0.97em;
+@Pink_Heading_Color: #f1407c;
+
+
+body
+{
+    
+}
+
+header
+{    
+    width: 100%;
+    height: 100px;
+    background-color: black;    
+}
+
+.Container
+{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+p
+{
+    font-size: @Normal_Text_Size;
+}
+
+main
+{
+    #Listing_Section
+    { 
+        width: 100%;
+        height: 565px;    
+
+        margin: 50px 0px;
+        
+        display: flex;        
+        flex-wrap: wrap;
+
+        #Asset_Showcase
+        {
+            flex-basis: 60%;
+            min-width: 200px;
+            flex-grow: 1;
+            height: 100%;             
+            
+            #Showcase_Gallery
+            {
+                margin-top: 20px;                
+
+                .lSPager 
+                {
+                    display: none;  
+                }
+
+                img
+                {
+                    width: 150px;
+                }
+            }
+        }
+
+        #Asset_Details
+        {                        
+            flex-basis: 40%;  
+            min-width: 200px;               
+            flex-grow: 1;
+            height: 100%;
+
+            #Details_Coloum
+            {
+                margin-left: 15px;
+
+                #Primary_Info
+                {
+                    .Horizontal_Rule
+                    {
+                        margin-top: 0px;
+                        margin-bottom: 5px;    
+                        display: block;
+                        border-top: 1px solid #ccc;                            
+                    }
+
+                    #Publisher_Name
+                    {                        
+                        color: @Pink_Heading_Color;
+                        margin-bottom: 5px;
+                    }
+
+                    #Tittle
+                    {                       
+                        float: left;
+                        margin-bottom: 10px;
+                    }
+
+                    #Buy_Price
+                    {
+                        float: right;
+                        margin-bottom: 5px; 
+                        font-size: 1.5em;
+                        
+                    }
+
+                    #Rating
+                    {   
+                        float: left; 
+                        margin: 0px;
+
+                        color: @Pink_Heading_Color;                                                                                           
+                        font-size: 1.3em;                        
+                        
+                    }
+
+                    #Buy_Button
+                    {   
+                        float: right;  
+                        margin:0px;
+                        padding: 7px 60px; 
+                        padding-bottom: 9px; 
+                                                
+                        border-radius: 3px;
+                        border: 0px;   
+                        background-color: @Pink_Heading_Color;
+                        
+                        color: white;
+                        font-size: 1.2em;
+                        font-weight: bold;                                 
+                    }
+
+                    .Horizontal_Rule_2
+                    {
+                        margin: 15px 0px;
+                        display: block;
+                        border-top: 1px solid #ccc;   
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Horizontal_Rule
+{
+    margin: 5px 0px;    
+    display: block;
+    border-top: 1px solid #ccc;        
+}
+
+.Clear_Both
+{
+    clear: both;
+}

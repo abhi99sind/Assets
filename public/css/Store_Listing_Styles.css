@@ -1,0 +1,94 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+.Container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+p {
+  font-size: 0.97em;
+}
+main #Listing_Section {
+  width: 100%;
+  height: 565px;
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main #Listing_Section #Asset_Showcase {
+  flex-basis: 60%;
+  min-width: 200px;
+  flex-grow: 1;
+  height: 100%;
+}
+main #Listing_Section #Asset_Showcase #Showcase_Gallery {
+  margin-top: 20px;
+}
+main #Listing_Section #Asset_Showcase #Showcase_Gallery .lSPager {
+  display: none;
+}
+main #Listing_Section #Asset_Showcase #Showcase_Gallery img {
+  width: 150px;
+}
+main #Listing_Section #Asset_Details {
+  flex-basis: 40%;
+  min-width: 200px;
+  flex-grow: 1;
+  height: 100%;
+}
+main #Listing_Section #Asset_Details #Details_Coloum {
+  margin-left: 15px;
+}
+main #Listing_Section #Asset_Details #Details_Coloum #Primary_Info .Horizontal_Rule {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  display: block;
+  border-top: 1px solid #ccc;
+}
+main #Listing_Section #Asset_Details #Details_Coloum #Primary_Info #Publisher_Name {
+  color: #f1407c;
+  margin-bottom: 5px;
+}
+main #Listing_Section #Asset_Details #Details_Coloum #Primary_Info #Tittle {
+  float: left;
+  margin-bottom: 10px;
+}
+main #Listing_Section #Asset_Details #Details_Coloum #Primary_Info #Buy_Price {
+  float: right;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+main #Listing_Section #Asset_Details #Details_Coloum #Primary_Info #Rating {
+  float: left;
+  margin: 0px;
+  color: #f1407c;
+  font-size: 1.3em;
+}
+main #Listing_Section #Asset_Details #Details_Coloum #Primary_Info #Buy_Button {
+  float: right;
+  margin: 0px;
+  padding: 7px 60px;
+  padding-bottom: 9px;
+  border-radius: 3px;
+  border: 0px;
+  background-color: #f1407c;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+main #Listing_Section #Asset_Details #Details_Coloum #Primary_Info .Horizontal_Rule_2 {
+  margin: 15px 0px;
+  display: block;
+  border-top: 1px solid #ccc;
+}
+.Horizontal_Rule {
+  margin: 5px 0px;
+  display: block;
+  border-top: 1px solid #ccc;
+}
+.Clear_Both {
+  clear: both;
+}

@@ -1,0 +1,72 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+.Container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+p {
+  font-size: 0.97em;
+}
+main .Gap_Genrator {
+  margin-top: 40px;
+}
+main .Asset_Type_Heading {
+  color: #666666;
+  margin-bottom: 10px;
+}
+main ul {
+  padding: 0;
+  list-style-type: none;
+}
+main ul li {
+  display: inline-block;
+}
+main ul .Desc {
+  width: 200px;
+  height: auto;
+}
+main ul img {
+  border-radius: 5px;
+}
+main ul .Title {
+  margin: 5px 0px 3px 0px;
+  font-size: 0.97em;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main ul .Publisher_Name {
+  margin: 3px 0px;
+  color: grey;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main ul .Rating {
+  display: inline;
+  margin: 3px 0px;
+}
+main ul .Price {
+  margin: -2px 0px;
+  float: right;
+  font-size: 0.85em;
+}
+main hr {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  margin-top: 40px;
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
