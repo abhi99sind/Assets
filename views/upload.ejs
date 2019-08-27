@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:3000/uploads" method="POST" enctype="multipart/form-data" >
+        <div class="form-control">
+            <label for="assetName">Name</label>
+            <input type="text" name="a" id="assetName">
+        </div>
+        <div class="form-control">
+            <label for="uploaderName">Uploader Name</label>
+            <input type="text" name="u" id="uploaderName">
+        </div>
+        <div class="form-control">
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="price">Price</label>
+            <input type="number" name="price" id="price">
+        </div>
+        <div class="form-control">
+            <label for="mainFile">Main file of Assets</label>
+            <input type="file" name="mainFile" id="mainFile">
+        </div>
+        <div class="form-control">
+            <label for="Ofiles">Other files of Assets</label>
+            <input type="file" name="mainFile" id="Ofiles" multiple>
+        </div>
+        <div class="form-control">
+            <label for="licence">Licence</label>
+            <input type="text" name="licence" id="licence">
+        </div>
+        <div class="form-control">
+            <label for="releaseDate">Release Date</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <button type="submit">Add an asset</button>
+    </form>
+    <script>
+        //const axios = require('axios');
+        function submit(){
+        axios.post('/uploads',{
+            a: document.getElementById('a').value,
+            u: document.getElementById('u').value,
+            d: document.getElementById('description').value,
+            price: document.getElementById('price').value,
+            licence: document.getElementById('licence').value,
+            releaseDate: document.getElementById('date').value
+    })
+    .then(result => {
+        console.log(result);
+    })
+    .catch(err => {
+        console.log(err);
+    });
+}
+    </script>
+</body>
+</html>
