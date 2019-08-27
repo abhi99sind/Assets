@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Complete Game Assets</title>
+        <meta charset="UTF-8">
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  href="/css/lightslider.css"/>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/Home_Styles.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/js/lightslider.js"></script> 
+        <script src="/js/slider_prop.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="Container">
+
+            </div>
+        </header>
+        <main class="Container">
+            <article>
+                <section>
+                    <h2>Popular in 2D</h2>
+                    <ul id="responsive">
+                            <%for (let file of assetMain.MainFile){%>
+                                <% if(file.mimetype === "image/png" || file.mimetype === "image/jpg" || file.mimetype === "image/jpeg") {%>                    
+                        <li>
+                            <img src="/<%=file.path%>" alt="">
+                            <div class="Desc">
+                                <h3 class="Title">Amplify Shader Editor</h3>
+                                <p class="Publisher_Name">Amplify Creation</p>
+                                <p class="Rating">★ ★ ★ ★ ★ </p>
+                                <p class="Price">(40$)</p>
+                            </div>
+                        </li>
+                        <%}}%>
+                    </ul>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
